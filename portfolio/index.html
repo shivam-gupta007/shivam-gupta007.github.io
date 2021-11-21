@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="home.js"></script>
+
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Shivam Gupta | Android Developer</title>
+</head>
+
+<body>
+    <header>
+        <!-- Grey with black text -->
+        <nav class="navbar navbar-expand-sm bg-light fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand mx-lg-5" href="#">
+                    <img src="images/avatar.png" alt="" class="rounded-pill avatar-icon"> <span
+                        class="avatar-text text-dark">Shivam Gupta</span>
+                </a>
+                <button class="navbar-toggler text-muted" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-muted" id="link1" onmouseover="makeAcitveTab('link1')"
+                                onmouseout="removeAcitveTab('link1')" href="#skills_section">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-muted" id="link2" onmouseover="makeAcitveTab('link2')"
+                                onmouseout="removeAcitveTab('link2')" href="#work_section">Work</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-muted" id="link3" onmouseover="makeAcitveTab('link3')"
+                                onmouseout="removeAcitveTab('link3')" href="#contact_section">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="main_container">
+            <div class="left_container">
+                <p class="text1">Hi,I'm</p>
+                    <p class="text2">Shivam Gupta</p>
+                    <p class="text3">An Android Develper</p>
+                    <div class="btn-group">
+                        <button type="submit">Get In Touch</button>
+                        <button type="submit">Explore</button>
+                    </div>
+            </div>
+            <div class="right_container">
+                <img src="images/illustration.jpeg" alt="">
+            </div>
+        </div>
+       
+    </header>
+    <section id="skills_section">
+        <h1>skills</h1>
+    </section>
+    <section id="work_section">
+        <h1>work</h1>
+    </section>
+    <section id="contact_section">
+        <h1>contact</h1>
+    </section>
+
+
+
+</body>
+
+</html>

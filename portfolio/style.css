@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+:root {
+    --primary-color: #0152CC;
+    --default-color: #656565;
+}
+
+header, #skills_section, #work_section, #contact_section {
+    width: 100%;
+    height: 100vh;
+}
+
+/* ----navBar----  */
+
+.navbar {
+    background: #FFFFFF;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.25);
+}
+
+.avatar-icon {
+    width: 30px;
+    height: 30px;
+}
+
+.avatar-text {
+    font-size: 18px;
+}
+
+.nav-item:hover {
+    color: var(--default-color);
+    border-radius: 5px;
+}
+
+.nav-item {
+    margin: 0 20px 0;
+}
+
+/* ---main-container--- */
+
+.main_container {
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+    flex-flow: row wrap;
+    width: 100%;
+    height: 100vh;
+    /* background-color: #56d3c2; */
+}
+
+.left_container{
+    max-width: 300px;
+    height: 300px;
+    /* background-color: #0152CC; */
+    display: flex;
+    justify-content: center;
+    align-items:  flex-start;
+    flex-flow: column wrap;
+    line-height: 30px;
+    padding: 15px;
+    margin: 25px 0 0 10px;
+}
+
+.left_container .text1 {
+    font-size: 1.8rem;
+}
+
+.left_container .text2 {
+    font-size: 2rem;
+}
+
+.left_container .text3 {
+    font-size: 1.8rem;
+    
+}
+
+.right_container{
+    max-width: 300px;
+    height: 300px;
+    background-color: rgb(240, 4, 95);
+}
+
+.right_container img {
+    width: 100%;
+    height: 100%;
+}
+
+.btn-group button {
+    border: none;
+    padding: 3px 10px;
+    border-radius: 4px;
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+    transition: .5s;
+    transition-property: background-color;
+}
+
+.btn-group button:nth-child(2) {
+    margin: 0 14px 0;
+}
+
+.btn-group button:hover {
+    background-color: #0152CC;
+    color: white;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+#skills_section, #work_section, #contact_section{
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+#skills_section {
+    background-color: var(--default-color);
+}
+
+#work_section {
+    background-color: blueviolet;
+}
+
+#contact_section {
+    background-color: orange;
+}
