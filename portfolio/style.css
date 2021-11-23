@@ -15,7 +15,7 @@ header, #skills_section, #work_section, #contact_section {
     height: 100vh;
 }
 
-/* ----navBar----  */
+/* NavBar Start */
 
 .navbar {
     background: #FFFFFF;
@@ -40,11 +40,13 @@ header, #skills_section, #work_section, #contact_section {
     margin: 0 20px 0;
 }
 
-/* ---main-container--- */
+/* NavBar End */
+
+/* main_container start */
 
 .main_container {
-    justify-content: space-around;
     display: flex;
+    justify-content:center;
     align-items: center;
     flex-flow: row wrap;
     width: 100%;
@@ -54,15 +56,15 @@ header, #skills_section, #work_section, #contact_section {
 
 .left_container{
     max-width: 300px;
-    height: 300px;
-    /* background-color: #0152CC; */
+    height: auto;
     display: flex;
     justify-content: center;
     align-items:  flex-start;
     flex-flow: column wrap;
     line-height: 30px;
     padding: 15px;
-    margin: 25px 0 0 10px;
+    margin: 68px 0 0 10px;
+     /* background-color: #0152CC; */
 }
 
 .left_container .text1 {
@@ -74,19 +76,8 @@ header, #skills_section, #work_section, #contact_section {
 }
 
 .left_container .text3 {
-    font-size: 1.8rem;
+    font-size: 1.7rem;
     
-}
-
-.right_container{
-    max-width: 300px;
-    height: 300px;
-    background-color: rgb(240, 4, 95);
-}
-
-.right_container img {
-    width: 100%;
-    height: 100%;
 }
 
 .btn-group button {
@@ -109,16 +100,37 @@ header, #skills_section, #work_section, #contact_section {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
 }
 
+.right_container{
+    max-width: 300px;
+    height: 300px;
+    margin-bottom: 30px;
+    background-color: rgb(240, 4, 95);
+}
+
+.right_container img {
+    width: 100%;
+    height: 100%;
+}
+
+/* main_container End */
+
 #skills_section, #work_section, #contact_section{
     display: flex;
     justify-content: center;
-    align-items: center;    
+    align-items: center;   
+    flex-flow: row wrap; 
 }
 
 #skills_section {
-    background-color: var(--default-color);
+  /* background-color: #1f1d1d; */
+
 }
 
+#skills_section .card{
+    width: 260px;
+    margin: 10px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.25);
+}
 #work_section {
     background-color: blueviolet;
 }
