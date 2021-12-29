@@ -17,6 +17,7 @@ function make_msg_container(msg_txt, class_name) {
     p_tag.appendChild(p_text);
     div_tag.appendChild(p_tag);
     var msg_box = document.getElementById('msg_box');
+    msg_box.classList.add('msg-box-class');
     msg_box.appendChild(div_tag);
 }
 

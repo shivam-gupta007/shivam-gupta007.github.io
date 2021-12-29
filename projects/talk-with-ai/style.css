@@ -21,6 +21,7 @@ header{
     height: 100vh;
     justify-content: center;
     background-color: var(--primary-color);
+    padding: 20px 0;
 }
 
 .container{
@@ -36,12 +37,12 @@ header{
     font-size: 30px;
     text-align: center;
     border-bottom: 2px dotted black;
-    width: 150px;
+    width: 160px;
 }
 
-#msg_box{
-    overflow: scroll;
+.msg-box-class{
     width: 100%;
+    overflow: auto;
 }
 
 .bottom-bar{
