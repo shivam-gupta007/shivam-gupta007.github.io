@@ -1,0 +1,129 @@
+/* importing google fonts */
+@import url(‘https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap’);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'poppins', sans-serif;
+}
+
+/* variables for repeating values */
+:root {
+  --primary-color: rgb(138, 43, 226);
+  --secondary-color: rgb(204, 204, 204);
+  --shadow-color: rgba(126, 126, 126, 0.904);
+}
+
+html, body {
+  height: 100%;
+  display: grid;
+  place-items: center;
+  background: var(--primary-color);
+  text-align: center;
+}
+
+/* container for cards */
+.container {
+  padding: 0 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* card UI */
+.card {
+  height: 280px;
+  max-width: 350px;
+  margin: 0 20px;
+  background: var(--secondary-color);
+  transition: 0.4s;
+  box-shadow: 2px 2px 5px var(--shadow-color);
+}
+
+.card:hover {
+  height: 470px;
+  box-shadow: 5px 5px 10px var(--shadow-color);
+}
+
+.card .img {
+  height: 200px;
+  width: 100%;
+}
+
+.card .img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card .top-text {
+  padding: 5px;
+}
+
+.card .top-text .name {
+  font-size: 25px;
+  font-weight: 600;
+  color: #202020;
+  margin-top: 5px;
+}
+
+.card .top-text p {
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 5px;
+  color: var(--primary-color);
+  line-height: 20px;
+}
+
+.card .bottom-text {
+  padding: 0 20px 10px 20px;
+  margin-top: 10px;
+  background: var(--secondary-color);
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.1s;
+}
+
+.card:hover .bottom-text {
+  opacity: 1;
+  visibility: visible;
+}
+
+.card .bottom-text .text {
+  text-align: justify;
+}
+
+.card .bottom-text .btn {
+  margin: 10px 0;
+  text-align: left;
+}
+
+.card .bottom-text .btn a {
+  text-decoration: none;
+  background: var(--primary-color);
+  color: var(--secondary-color);
+  padding: 5px 8px;
+  border-radius: 3px;
+  display: inline-flex;
+  transition: 0.2s;
+}
+
+.card .bottom-text .btn a:hover {
+  transform: scale(0.9);
+}
+
+
+/* for making responsive design  */
+
+@media screen and (max-width: 978px) {
+  .container {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .card {
+    max-width: 700px;
+    margin: 20px 0;
+  }
+}
